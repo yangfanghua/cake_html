@@ -1,0 +1,248 @@
+
+header{
+display: flex;
+justify-content: space-between;
+align-items: center;
+margin: top 10px; ;
+    .logo{
+        width: 70px;
+        height: 70px;
+        background-color: rgb(209, 123, 19);
+    }
+//父層
+    .menu{
+        width: 30px; 
+        height: 5px;
+        background-color: black;
+        border-radius: 15px;
+        position: relative;
+//子層
+        &::before ,&::after{
+            content: "";
+            width: 30px; 
+            height: 5px;
+            background-color: black;
+            border-radius: 15px;
+            position: absolute;
+        }
+        &::before{
+            top:10px;
+        }
+        &::after{
+            top:-10px;
+        }
+    }
+    
+}
+
+//顏色變數
+$primary-color:#ec9d9d ;
+
+body{
+   margin: 0px;
+   padding: 0px;
+}
+
+body{
+    background-color: #f3cfcf;   
+}
+
+.container{
+    padding: 0px 56px  ;
+}
+
+//Area1
+.aera1{
+    display: flex;
+    margin-top: 32px;
+    justify-content: center;
+    .text-aera{
+        margin-right: 12px;
+        h1{
+            text-align: center;
+        }
+    }
+    .banner{
+        width: 300px;
+    }
+}
+
+//Area2
+.area2{
+    margin-top: 20px;
+    h2{
+        text-align: center;
+    }
+    .card-area{
+        display: flex;
+        justify-content: space-between;
+        .card{
+            width: 30%;
+            height: 300px;
+            display: flex;
+            justify-content: center;
+            align-items: end;
+            
+
+            //巢狀屬性
+            // background-size: cover;
+            // background-repeat: no-repeat;
+            // background-position: center center;
+            background: {
+                size: cover;
+                repeat: no-repeat;
+                position: center center;
+            }
+            .btn{
+                width: 50%;
+                height: 36px;
+                padding: 8px 12px;
+                background-color:$primary-color;
+                color: aliceblue;
+                font-size: 20px;
+                margin-bottom: 30px;
+                //原div元素btn->改成button
+                // margin:250px auto 0 auto ;
+                // text-align: center;
+                
+               
+                border: none;
+                transition: 0.6s;
+            }
+            .btn:hover{
+                cursor: pointer;
+                background-color: rgb(113, 236, 236);
+                color: black;
+            }
+            .btn:active{
+                scale: 0.95;
+            }
+
+            
+        }
+        .card1{
+            
+            background-image: url(./dessert_img/Rectangle\ 3\ \(2\).png);
+        }
+        .card2{
+            background-image: url(./dessert_img/Rectangle\ 3\ \(1\).png);
+        }
+        .card3{
+            background-image: url(./dessert_img/Rectangle\ 3.png);
+        }
+}
+
+
+
+
+
+
+
+}
+
+//Area3
+.area3{
+    margin-top: 30px;
+    border-top: 1px solid rgb(122, 93, 93);
+    h2{
+        text-align: center;
+    }
+    .card-area{
+        display: flex;
+        justify-content: space-between;
+    }
+    .card{
+        width: 30%;
+        height: 28vw;
+        // "vw"螢幕比例的寬;"vh"螢幕比例的高
+        justify-content: space-between;
+        background-color: white;
+        box-shadow: 1px 1px 4px black;
+        img{
+            width: 100%;
+        }
+        p{
+            margin: 0 12px;
+            font-size:20px ;
+        }
+        .btn{
+            background-color: gray;
+            color: white;
+            width: 10vw;
+            text-align: center;
+            padding: 8px 2px;
+            margin: 15px 20px 15px 2px;
+            box-shadow: 1px 1px 4px black;
+        }
+
+    }
+    .btn-primary{
+        display: flex;
+        justify-content: center;
+        background-color:$primary-color;
+        color: white;
+        border: none;
+        width: 100px;
+        font-size: 15px;
+        // text-align: center; 
+        padding: 8px 10px;
+        margin: 32px auto;
+    }
+
+    .btn-primary:hover{
+        cursor: pointer;
+        background-color: rgb(113, 236, 236);
+        color: black;
+    }
+
+}
+
+.area4{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 80px;
+position: relative;
+
+    img{
+        width: 60%;
+    }
+
+    .text-area{
+        margin-left: 80px;
+        background-color: #e485bc;
+        padding: 5 50px;
+        h3{
+            text-align: center;
+            font-size: 28px;
+            
+        }
+        p{
+            padding: 10px 40px;
+        }
+        
+       
+    }
+
+    .bg{
+        background-color: #cf7979;
+        height: 400px;
+        width: 45%;
+        position: absolute;
+        z-index: -1;
+        top:-15px;
+
+        left : -56px;
+    }
+
+}
+
+.footer{
+    width: 100%;
+    padding: 8px;
+    margin-top: 120px;
+    background-color: $primary-color;
+
+    p{
+        text-align: center;
+    }
+}

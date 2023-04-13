@@ -1,0 +1,201 @@
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: top 10px;
+}
+header .logo {
+  width: 70px;
+  height: 70px;
+  background-color: rgb(209, 123, 19);
+}
+header .menu {
+  width: 30px;
+  height: 5px;
+  background-color: black;
+  border-radius: 15px;
+  position: relative;
+}
+header .menu::before, header .menu::after {
+  content: "";
+  width: 30px;
+  height: 5px;
+  background-color: black;
+  border-radius: 15px;
+  position: absolute;
+}
+header .menu::before {
+  top: 10px;
+}
+header .menu::after {
+  top: -10px;
+}
+
+body {
+  margin: 0px;
+  padding: 0px;
+}
+
+body {
+  background-color: #f3cfcf;
+}
+
+.container {
+  padding: 0px 56px;
+}
+
+.aera1 {
+  display: flex;
+  margin-top: 32px;
+  justify-content: center;
+}
+.aera1 .text-aera {
+  margin-right: 12px;
+}
+.aera1 .text-aera h1 {
+  text-align: center;
+}
+.aera1 .banner {
+  width: 300px;
+}
+
+.area2 {
+  margin-top: 20px;
+}
+.area2 h2 {
+  text-align: center;
+}
+.area2 .card-area {
+  display: flex;
+  justify-content: space-between;
+}
+.area2 .card-area .card {
+  width: 30%;
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: end;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+.area2 .card-area .card .btn {
+  width: 50%;
+  height: 36px;
+  padding: 8px 12px;
+  background-color: #ec9d9d;
+  color: aliceblue;
+  font-size: 20px;
+  margin-bottom: 30px;
+  border: none;
+  transition: 0.6s;
+}
+.area2 .card-area .card .btn:hover {
+  cursor: pointer;
+  background-color: rgb(113, 236, 236);
+  color: black;
+}
+.area2 .card-area .card .btn:active {
+  scale: 0.95;
+}
+.area2 .card-area .card1 {
+  background-image: url(./dessert_img/Rectangle\ 3\ \(2\).png);
+}
+.area2 .card-area .card2 {
+  background-image: url(./dessert_img/Rectangle\ 3\ \(1\).png);
+}
+.area2 .card-area .card3 {
+  background-image: url(./dessert_img/Rectangle\ 3.png);
+}
+
+.area3 {
+  margin-top: 30px;
+  border-top: 1px solid rgb(122, 93, 93);
+}
+.area3 h2 {
+  text-align: center;
+}
+.area3 .card-area {
+  display: flex;
+  justify-content: space-between;
+}
+.area3 .card {
+  width: 30%;
+  height: 28vw;
+  justify-content: space-between;
+  background-color: white;
+  box-shadow: 1px 1px 4px black;
+}
+.area3 .card img {
+  width: 100%;
+}
+.area3 .card p {
+  margin: 0 12px;
+  font-size: 20px;
+}
+.area3 .card .btn {
+  background-color: gray;
+  color: white;
+  width: 10vw;
+  text-align: center;
+  padding: 8px 2px;
+  margin: 15px 20px 15px 2px;
+  box-shadow: 1px 1px 4px black;
+}
+.area3 .btn-primary {
+  display: flex;
+  justify-content: center;
+  background-color: #ec9d9d;
+  color: white;
+  border: none;
+  width: 100px;
+  font-size: 15px;
+  padding: 8px 10px;
+  margin: 32px auto;
+}
+.area3 .btn-primary:hover {
+  cursor: pointer;
+  background-color: rgb(113, 236, 236);
+  color: black;
+}
+
+.area4 {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 80px;
+  position: relative;
+}
+.area4 img {
+  width: 60%;
+}
+.area4 .text-area {
+  margin-left: 80px;
+  background-color: #e485bc;
+  padding: 5 50px;
+}
+.area4 .text-area h3 {
+  text-align: center;
+  font-size: 28px;
+}
+.area4 .text-area p {
+  padding: 10px 40px;
+}
+.area4 .bg {
+  background-color: #cf7979;
+  height: 400px;
+  width: 45%;
+  position: absolute;
+  z-index: -1;
+  top: -15px;
+  left: -56px;
+}
+
+.footer {
+  width: 100%;
+  padding: 8px;
+  margin-top: 120px;
+  background-color: #ec9d9d;
+}
+.footer p {
+  text-align: center;
+}/*# sourceMappingURL=0412.css.map */
